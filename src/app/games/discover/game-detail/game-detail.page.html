@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="success">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/games/pages/discover"></ion-back-button>
+      </ion-buttons>
+    <ion-title>{{game.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-card>
+      <img [src]="game.imageUrl" />
+      <ion-card-header>
+        <ion-card-subtitle>create by: gta1994</ion-card-subtitle><br>
+        <ion-card-subtitle>Gender: M</ion-card-subtitle><br>
+        <ion-card-title>Title: {{game.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{game.description}}
+      </ion-card-content>
+
+      <ion-button color="success" margin class="align-center">Join Game</ion-button>
+    </ion-card>
+
+
+  </ion-content>
